@@ -29,7 +29,7 @@ flake8-docstrings = "^1.6"
 flake8-fixme = "^1.1"
 flake8-type-checking = {version="^1.5", python="<4.0"}
 isort = "^5.10"
-mypy = "^0.960"
+mypy = "^0.961"
 pep8-naming = "^0.12"
 pre-commit = "^2.19"
 pytest = "^7.1"
