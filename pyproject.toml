@@ -49,13 +49,14 @@ pytest = "^7.1"
 pytest-check = "^1.0"
 pytest-cov = "^3.0"
 pytest-randomly = "^3.12"
+time-machine = "^2.7"
 
 [tool.black]
 line-length = 100
 
 [tool.isort]
 case_sensitive = true
-known_first_party = "misc,tests"
+known_first_party = "sco1_misc,tests"
 no_lines_before = "LOCALFOLDER"
 order_by_type = false
 profile = "black"

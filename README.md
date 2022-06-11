@@ -2,7 +2,7 @@
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/sco1-misc)](https://pypi.org/project/sco1-misc/)
 [![PyPI](https://img.shields.io/pypi/v/sco1-misc)](https://pypi.org/project/sco1-misc/)
 [![PyPI - License](https://img.shields.io/pypi/l/sco1-misc?color=magenta)](https://github.com/sco1/sco1-misc/blob/main/LICENSE)
-[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/sco1/sco1-misc/main.svg)](https://results.pre-commit.ci/latest/github/sco1/sco1-misc/main)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/sco1/sco1-misc/main.svg)](https://results.pre-commit.ci/latest/github/sco1/misc/main)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-black)](https://github.com/psf/black)
 [![Open in Visual Studio Code](https://img.shields.io/badge/Open%20in-VSCode.dev-blue)](https://vscode.dev/github.com/sco1/sco1-misc)
 

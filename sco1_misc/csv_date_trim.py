@@ -9,7 +9,9 @@ from sco1_misc.prompts import prompt_for_file
 TODAY_DATESTR = dt.date.today().isoformat()
 
 
-def _date_convert(ctx: click.Context, param: click.Option, value: str) -> dt.date:
+def _date_convert(
+    ctx: click.Context, param: click.Option, value: str
+) -> dt.date:  # pragma: no cover
     return dt.date.fromisoformat(value)
 
 
@@ -82,5 +84,5 @@ def trim_cli(
                 writer.writerows(reader)
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     trim_cli()
