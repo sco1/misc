@@ -1,6 +1,6 @@
 # misc
-[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/sco1-misc)](https://pypi.org/project/sco1-misc/)
-[![PyPI](https://img.shields.io/pypi/v/sco1-misc)](https://pypi.org/project/sco1-misc/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/sco1-misc/0.1.1?logo=python&logoColor=FFD43B)](https://pypi.org/project/sco1-misc/)
+[![PyPI](https://img.shields.io/pypi/v/sco1-misc)](https://pypi.org/project/sco1-misc/?logo=Python&logoColor=FFD43B)
 [![PyPI - License](https://img.shields.io/pypi/l/sco1-misc?color=magenta)](https://github.com/sco1/sco1-misc/blob/main/LICENSE)
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/sco1/sco1-misc/main.svg)](https://results.pre-commit.ci/latest/github/sco1/misc/main)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-black)](https://github.com/psf/black)
@@ -19,7 +19,7 @@ Helper wrappers for [`Tkinter`'s selection dialogs](https://docs.python.org/3/li
 A CLI tool for date windowing CSV log files
 
 **NOTE:** The following assumptions are made about the input CSV file:
-  * The CSV file contains a column named `"Time"`, with timestamps formatted as `MM/DD/YYYY HH:MM:SS` 
+  * The CSV file contains a column named `"Time"`, with timestamps formatted as `MM/DD/YYYY HH:MM:SS`
   * The CSV file ends on the same date as the specified date filter
 
 #### Input Parameters
