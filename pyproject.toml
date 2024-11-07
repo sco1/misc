@@ -1,14 +1,17 @@
-[tool.poetry]
+[project]
 name = "sco1-misc"
 version = "0.1.1"
 description = "A collection of miscellaneous helpers."
-authors = ["sco1 <sco1.git@gmail.com>"]
+authors = [
+    {name = "sco1", email = "sco1.git@gmail.com"}
+]
+maintainers = [
+    {name = "sco1", email = "sco1.git@gmail.com"}
+]
 
 readme = "README.md"
-homepage = "https://github.com/sco1/"
-repository = "https://github.com/sco1/misc"
 classifiers = [
-    "Development Status :: 5 - Production/Stable",
+    "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
@@ -16,39 +19,42 @@ classifiers = [
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "Typing :: Typed",
 ]
 
-include = [
-    {path = "./CHANGELOG.md", format = "sdist"}
+requires-python = ">=3.10"
+dependencies = [
+    "click~=8.1",
 ]
 
-[tool.poetry.urls]
-"Issue Tracker" = "https://github.com/sco1/misc/issues"
+[project.urls]
+Homepage = "https://github.com/sco1/"
+Documentation = "https://github.com/sco1/sco1-misc/blob/main/README.md"
+Repository = "https://github.com/sco1/sco1-misc"
+Issues = "https://github.com/sco1/sco1-misc/issues"
+Changelog = "https://github.com/sco1/sco1-misc/blob/main/CHANGELOG.md"
 
-[tool.poetry.scripts]
+[project.scripts]
 csvdatetrim = "sco1_misc.csv_date_trim:trim_cli"
 
-[tool.poetry.dependencies]
-python = "^3.10"
-click = "^8.1"
-
-[tool.poetry.dev-dependencies]
-black = "^23.1"
-bump2version = "^1.0"
-flake8 = "^6.0"
-flake8-annotations = "^3.0"
-flake8-bugbear = "^23.1"
-flake8-docstrings = "^1.7"
-flake8-fixme = "^1.1"
-isort = "^5.12"
-mypy = "^1.0"
-pep8-naming = "^0.13"
-pre-commit = "^3.0"
-pytest = "^7.2"
-pytest-cov = "^3.0"
-pytest-randomly = "^3.12"
-tox = "^4.4"
+[tool.uv]
+dev-dependencies = [
+    "black~=24.10",
+    "bump2version~=1.0",
+    "flake8~=7.1",
+    "flake8-annotations~=3.1",
+    "isort~=5.13",
+    "mypy~=1.11",
+    "pre-commit~=4.0",
+    "pytest~=8.3",
+    "pytest-check~=2.4",
+    "pytest-cov~=6.0",
+    "pytest-randomly~=3.15",
+    "ruff~=0.7",
+    "tox~=4.18",
+    "tox-uv~=1.11",
+]
 
 [tool.black]
 line-length = 100
@@ -75,5 +81,5 @@ warn_unused_configs = true
 warn_unused_ignores = true
 
 [build-system]
-requires = ["poetry-core>=1.2"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
