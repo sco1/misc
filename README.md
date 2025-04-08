@@ -3,8 +3,6 @@
 [![PyPI](https://img.shields.io/pypi/v/sco1-misc)](https://pypi.org/project/sco1-misc/?logo=Python&logoColor=FFD43B)
 [![PyPI - License](https://img.shields.io/pypi/l/sco1-misc?color=magenta)](https://github.com/sco1/sco1-misc/blob/main/LICENSE)
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/sco1/sco1-misc/main.svg)](https://results.pre-commit.ci/latest/github/sco1/misc/main)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-black)](https://github.com/psf/black)
-[![Open in Visual Studio Code](https://img.shields.io/badge/Open%20in-VSCode.dev-blue)](https://vscode.dev/github.com/sco1/sco1-misc)
 
 A collection of miscellaneous helpers.
 
@@ -35,10 +33,10 @@ A CLI tool for date windowing CSV log files
 
 ## Contributing
 ### Development Environment
-This project uses [Poetry](https://python-poetry.org/) to manage dependencies. With your fork cloned to your local machine, you can install the project and its dependencies to create a development environment using:
+This project uses [uv](https://docs.astral.sh/uv/) to manage dependencies. With your fork cloned to your local machine, you can install the project and its dependencies to create a development environment using:
 
 ```bash
-$ poetry install
+$ uv sync
 ```
 
 A [pre-commit](https://pre-commit.com) configuration is also provided to create a pre-commit hook so linting errors aren't committed:
