@@ -2,10 +2,9 @@
 name = "sco1-misc"
 version = "0.1.1"
 description = "A collection of miscellaneous helpers."
+license = "MIT"
+license-files = ["LICENSE"]
 authors = [
-    {name = "sco1", email = "sco1.git@gmail.com"}
-]
-maintainers = [
     {name = "sco1", email = "sco1.git@gmail.com"}
 ]
 
@@ -13,7 +12,6 @@ readme = "README.md"
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3 :: Only",
     "Programming Language :: Python :: 3.10",
@@ -48,7 +46,6 @@ dev-dependencies = [
     "mypy~=1.11",
     "pre-commit~=4.0",
     "pytest~=8.3",
-    "pytest-check~=2.4",
     "pytest-cov~=6.0",
     "pytest-randomly~=3.15",
     "ruff~=0.7",
